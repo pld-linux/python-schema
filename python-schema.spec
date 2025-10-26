@@ -2,7 +2,7 @@
 # Conditional build:
 %bcond_without	tests	# unit tests
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module (built from python3-schema.spec)
 
 Summary:	Schema validation just got Pythonic
 Summary(pl.UTF-8):	Pythonowe sprawdzanie zgodności ze schematem
@@ -10,7 +10,7 @@ Name:		python-schema
 # keep 0.7.4 here for python2 support
 # (despite python 2.x in classifiers, 0.7.5 uses inspect.signature, which requires python 3.3+)
 Version:	0.7.4
-Release:	3
+Release:	4
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/schema/
